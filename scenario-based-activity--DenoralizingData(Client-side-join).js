@@ -29,7 +29,7 @@ const postByUser = posts.reduce((table, post) => {
 const userWithPost = users.map((user) => {
   return {
     ...user,
-    post: postByUser[user.id] || [],
+    post: JSON.stringify(postByUser[user.id] || []),
   };
 });
-console.log(JSON.stringify(userWithPost));
+console.log(userWithPost);
