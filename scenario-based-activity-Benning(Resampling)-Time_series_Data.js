@@ -47,6 +47,3 @@ const binnedData = events.reduce((acc, event) => {
   return acc;
 }, {});
 console.log(binnedData);
-// const times = binnedData.
-
-// console.log(times);

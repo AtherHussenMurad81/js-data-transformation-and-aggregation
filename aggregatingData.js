@@ -7,9 +7,8 @@ const cartItems = [
 
 const bestSellingItem = cartItems.reduce((bestItem, item) => {
   const { category, price, quantity } = item;
-  //   console.log(category, price, quantity);
-  //   console.log("items", item[price]);
-  console.log(bestItem, item);
+
+  // console.log(bestItem, item);
   if (!bestItem[category]) {
     bestItem[category] = {
       totalRevenue: 0,
