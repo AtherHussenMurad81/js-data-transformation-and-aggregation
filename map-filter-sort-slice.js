@@ -344,7 +344,6 @@ const topElectronics = rowApiData.filter(
   (item) => item.category === "Electronics",
 );
 // filter
-
 // console.log(topElectronics);
 // console.log(topElectronics.length);
 

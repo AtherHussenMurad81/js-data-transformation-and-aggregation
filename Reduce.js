@@ -29,6 +29,8 @@ const players = [
   { id: 4, Name: "FIFA 23", score: 50 },
 ];
 
+// const sort = players.sort((a, b)=>(a.name).l)
+
 const bestScore = players.reduce((bestPlayer, players) => {
   //   console.log(bestPlayer);
   if (bestPlayer.score > players.score) {

@@ -44,3 +44,4 @@ const filter = new Set(tagsFromPosts.flat());
 const filterArray = [...new Set(tagsFromPosts.flat())];
 // console.log(filter);
 // console.log(filterArray);
+

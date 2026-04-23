@@ -32,4 +32,4 @@ const userWithPost = users.map((user) => {
     post: JSON.stringify(postByUser[user.id] || []),
   };
 });
-console.log(userWithPost);
+// console.log(userWithPost);

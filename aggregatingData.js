@@ -5,21 +5,21 @@ const cartItems = [
   { category: "Audio", item: "Headphone", price: 2000, quantity: 1 },
 ];
 
-const bestSellingItem = cartItems.reduce((bestItem, item) => {
+const bestSellingItem = cartItems.reduce((table, item) => {
   const { category, price, quantity } = item;
 
-  // console.log(bestItem, item);
-  if (!bestItem[category]) {
-    bestItem[category] = {
+  // console.log(table, item);
+  if (!table[category]) {
+    table[category] = {
       totalRevenue: 0,
       itemCount: 0,
     };
   }
 
-  bestItem[category].totalRevenue += price * quantity;
-  bestItem[category].itemCount += quantity;
+  table[category].totalRevenue += price * quantity;
+  table[category].itemCount += quantity;
 
-  return bestItem;
+  return table;
 }, {});
 
 console.log(bestSellingItem);

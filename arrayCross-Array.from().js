@@ -22,12 +22,13 @@
 // console.log(fill);
 
 // const arr = Array.from({ length: 5 }, (_, i) => i);
-// console.log(arr);
+// console.log(arr); // Output: [ 0, 1, 2, 3, 4 ]
 
-// const array = Array.from([1, 2, 3], (value, index) => value ** 2);
-// console.log(array);
+const array = Array.from([1, 2, 3], (value, index) => value ** 2);
+// console.log(array); //output [ 1, 4, 9 ]
 
 const range = (start, stop, step) =>
+  //           (1  ,   11,    2)); // 1 teke suru, 11 porjonto takbe. 2 gor kore kore agabe.
   Array.from(
     { length: Math.ceil((stop - start) / step) },
     (_, i) => start + i * step,
